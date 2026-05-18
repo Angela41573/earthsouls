@@ -223,7 +223,21 @@ h1{
   z-index:0;
 }
 
+.final-media{
+  width:220px;
+  height:auto;
+  display:block;
+  margin:20px auto;
+  background: red;
+}
+body::before{
+  z-index: 0;
+}
 
+section, .ending{
+  position: relative;
+  z-index: 2;
+}
 /* 魚的基本樣式 */
 .fish{
   position:absolute;
@@ -303,18 +317,4 @@ h1{
 
   z-index:10;
 }
-.final-media{
-  width:220px;
-  height:auto;
-  display:block;
-  margin:20px auto;
-  background: red;
-}
-body::before{
-  z-index: 0;
-}
 
-section, .ending{
-  position: relative;
-  z-index: 2;
-}
