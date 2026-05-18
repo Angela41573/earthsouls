@@ -230,13 +230,12 @@ h1{
   margin:20px auto;
   background: red;
 }
-body::before{
-  z-index: 0;
-}
-
-section, .ending{
-  position: relative;
-  z-index: 2;
+body{
+  margin: 0;
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* 魚的基本樣式 */
 .fish{
