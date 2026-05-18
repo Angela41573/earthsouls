@@ -310,18 +310,11 @@ h1{
   margin:20px auto;
   background: red;
 }
-body::before{
-  content:"";
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.2);
-  z-index:0;
+ending{
+  position: relative;
+  z-index: 2;
 }
 
-.ending, section{
+body{
   position: relative;
-  z-index:1;
 }
