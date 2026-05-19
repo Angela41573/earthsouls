@@ -330,22 +330,36 @@ h1{
   position:relative;
   z-index:999;
 }
+/* 左側透明欄 */
 .data-sidebar{
+  position:fixed;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+
   width:200px;
-  background:rgba(0,0,0,0.3);
+
+  background:rgba(0,0,0,0.4);
   padding:15px;
-  border-radius:10px;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+  z-index:9999;
 }
 
+/* 每一項 */
 .data-item{
   position:relative;
   padding:10px;
   color:white;
+
   border-left:3px solid #7ec8ff;
   cursor:pointer;
 }
 
-/* 小框框 */
+/* hover小框 */
 .tooltip{
   position:absolute;
   left:110%;
@@ -358,14 +372,14 @@ h1{
   padding:8px 10px;
   border-radius:8px;
 
-  width:180px;
+  width:200px;
 
   opacity:0;
   visibility:hidden;
   transition:0.3s;
 }
 
-/* hover出現 */
+/* 滑過顯示 */
 .data-item:hover .tooltip{
   opacity:1;
   visibility:visible;
