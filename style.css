@@ -6,13 +6,24 @@
 
 body{
   margin:0;
-  background:linear-gradient(
-    to bottom,
-    #001f3f,
-    #013a63,
-    #1b4965,
-    #5fa8d3
-  );
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,31,63,0.7),
+      rgba(1,58,99,0.7),
+      rgba(27,73,101,0.7),
+      rgba(95,168,211,0.7)
+    ),
+    url("images/bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  color:white;
+  font-family:Georgia, serif;
+}
   color:white;
   font-family:Georgia, serif;
 }
@@ -228,14 +239,8 @@ h1{
   height:auto;
   display:block;
   margin:20px auto;
-  background: red;
 }
-body{
-  margin: 0;
-  background-image: url("images/bg.jpg");
-  
-  background-repeat: no-repeat;
-}
+
 /* 魚的基本樣式 */
 .fish{
   position:absolute;
