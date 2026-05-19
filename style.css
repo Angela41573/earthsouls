@@ -330,3 +330,60 @@ h1{
   position:relative;
   z-index:999;
 }
+.data-sidebar{
+  position:fixed;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:200px;
+
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(6px);
+
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+  z-index:1000;
+}
+
+.data-item{
+  color:white;
+  cursor:pointer;
+  padding:10px;
+
+  position:relative;
+  border-left:3px solid #7ec8ff;
+
+  font-size:14px;
+}
+
+.tooltip{
+  position:absolute;
+  left:110%;
+  top:50%;
+  transform:translateY(-50%);
+
+  background:rgba(0,0,0,0.85);
+  color:white;
+
+  padding:10px 12px;
+  border-radius:10px;
+
+  font-size:13px;
+
+  width:200px;
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:0.3s;
+}
+
+.data-item:hover .tooltip{
+  opacity:1;
+  visibility:visible;
+}
