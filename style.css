@@ -387,3 +387,18 @@ h1{
   opacity:1;
   visibility:visible;
 }
+.data-sidebar{
+  position:fixed;
+  left:0;
+  top:50%;
+  background:red;
+  padding:20px;
+}
+
+.tooltip{
+  display:none;
+}
+
+.data-item:hover .tooltip{
+  display:block;
+}
