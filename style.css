@@ -321,4 +321,12 @@ h1{
 
   z-index:10;
 }
+.ending{
+  position:relative;
+  z-index:999;
+}
 
+.final-media{
+  position:relative;
+  z-index:999;
+}
