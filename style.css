@@ -284,7 +284,9 @@ h1{
 }
 .card,
 .hero,
-.transition{
+.transition,
+.ending,
+.final-media{
   position:relative;
   z-index:1;
 }
